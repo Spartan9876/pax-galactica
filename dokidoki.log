@@ -1,0 +1,48 @@
+finding the game's directory
+changed directory to 'C:\Users\Savvas\Documents\GitHub\pax-galactica'
+initializing glfw. . .
+initializing mixer. . .
+detected video modes:
+  640x480 R5 G6 B5
+  720x480 R5 G6 B5
+  720x576 R5 G6 B5
+  800x600 R5 G6 B5
+  1024x768 R5 G6 B5
+  1280x720 R5 G6 B5
+  1280x768 R5 G6 B5
+  1152x864 R5 G6 B5
+  1280x800 R5 G6 B5
+  1360x768 R5 G6 B5
+  1366x768 R5 G6 B5
+  1280x960 R5 G6 B5
+  1440x900 R5 G6 B5
+  1280x1024 R5 G6 B5
+  1360x1024 R5 G6 B5
+  1600x900 R5 G6 B5
+  1400x1050 R5 G6 B5
+  1680x1050 R5 G6 B5
+  640x480 R8 G8 B8
+  720x480 R8 G8 B8
+  720x576 R8 G8 B8
+  800x600 R8 G8 B8
+  1024x768 R8 G8 B8
+  1280x720 R8 G8 B8
+  1280x768 R8 G8 B8
+  1152x864 R8 G8 B8
+  1280x800 R8 G8 B8
+  1360x768 R8 G8 B8
+  1366x768 R8 G8 B8
+  1280x960 R8 G8 B8
+  1440x900 R8 G8 B8
+  1280x1024 R8 G8 B8
+  1360x1024 R8 G8 B8
+  1600x900 R8 G8 B8
+  1400x1050 R8 G8 B8
+  1680x1050 R8 G8 B8
+setting video mode to 1024x768. . .
+starting main loop
+warning: underrun of 432ms
+warning: underrun of 2234ms
+warning: underrun of 16ms
+shutting down
+exiting normally

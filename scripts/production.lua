@@ -25,6 +25,7 @@ local function spawn(unit_type)
   
   if (unit_type == 'upgrade') then 
     self.resources.harvest_rate = self.resources.harvest_rate + 0.25
+	self.ship.damage(-500)
   else
     local spawn_pos = self.transform.pos + SPAWN_OFFSET * self.transform.facing
     game.log.record_spawn(blueprints[unit_type])

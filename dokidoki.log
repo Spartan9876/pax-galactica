@@ -41,8 +41,7 @@ detected video modes:
   1680x1050 R8 G8 B8
 setting video mode to 1024x768. . .
 starting main loop
-warning: underrun of 432ms
-warning: underrun of 2234ms
-warning: underrun of 16ms
+warning: underrun of 405ms
+warning: underrun of 2199ms
 shutting down
 exiting normally

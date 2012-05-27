@@ -16,6 +16,7 @@ if args['--windowed'] then
   kernel.set_video_mode(1024, 768)
 else
   kernel.set_fullscreen(true)
+  kernel.set_video_mode(1024, 768)
 end
 
 kernel.start_main_loop(the_game.make())

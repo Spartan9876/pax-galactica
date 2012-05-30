@@ -26,6 +26,14 @@ game.actors.new_generic('collision', function ()
           bullet.dead = true
 
         end
+        if b1.type == b2.type and b1.type == 'ship' and b1.player ~= b2.player and collision.collide(b1, b2) then 
+          local ship1 = b1.actor
+          local ship2 = b2.actor
+          local damage1 = ship2.ship.hit_points
+          local damage2 = ship1.ship.hit_points
+          ship1.ship.damage(damage1)
+          ship2.ship.damage(damage2)
+        end
       end
     end
 

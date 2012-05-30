@@ -42,7 +42,7 @@ function update()
   if hit_points <= 0 then destruct() end
 
   if math.random() < v2.mag(velocity) / 10 then
-    game.particles.add_bubble(random_point_on_ship())
+    --game.particles.add_bubble(random_point_on_ship())
   end
 
   -- debug

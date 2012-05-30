@@ -1,6 +1,7 @@
 ﻿*.exe
 dokidoki/
 dokidoki-support/
+*.log
 #################
 ## Eclipse
 #################

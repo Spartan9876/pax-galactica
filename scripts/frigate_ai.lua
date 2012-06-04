@@ -25,7 +25,8 @@ function update()
     
     if self.frigate_shooting.is_ready_to_shoot() and speed_square > 0 then
       stopping = true
-    elseif self.frigate_shooting.is_empty() then
+    elseif self.frigate_shooting.is_empty(
+	) then
       stopping = false
     end
 

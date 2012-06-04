@@ -24,13 +24,24 @@ halt_production = false
 local function spawn(unit_type)
   self.resources.amount = self.resources.amount - UNIT_COSTS[unit_type]
   
-  
   if (unit_type == 'upgrade') then 
+  
+  	game.actors.new(blueprints.plus,
+      {'transform', pos=self.transform.pos, facing=self.transform.facing},
+      {'bullet', player=self.ship.player, velocity=start_vel})
+	  
     self.resources.harvest_rate = self.resources.harvest_rate + 0.25
 	
+	if (i <= 10) then
 	i = i +1
+	end
 	
 	self.ship.damage(-(100 * i))
+	
+	--game.actors.new(blueprints.plus,
+     -- {'transform', pos=spawn_pos, facing=self.transform.facing},
+    --  {'ship', player=self.ship.player})
+	
   else
     local spawn_pos = self.transform.pos + SPAWN_OFFSET * self.transform.facing
     game.log.record_spawn(blueprints[unit_type])
@@ -50,7 +61,7 @@ function update()
     end
   else
     if potential_cost > UNIT_COSTS.upgrade then
-      spawn('upgrade')    
+      spawn('upgrade')	  
     elseif potential_cost > UNIT_COSTS.frigate then
       spawn('frigate')  
     elseif potential_cost > UNIT_COSTS.bomber then

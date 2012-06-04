@@ -2,10 +2,10 @@ local v2 = require 'dokidoki.v2'
 
 callback = callback or function () end
 
-local counter = 5
+local counter = 3
 
 function reset_counter()
-  counter = 5
+  counter = 3
 end
 
 function update()

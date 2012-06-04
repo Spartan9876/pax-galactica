@@ -1,5 +1,5 @@
 require 'dokidoki.module'
-[[ background, debris, fish, background_fx, music_loader, game_flow, fade_in,
+[[ background, debris, fish, plus, background_fx, music_loader, game_flow, fade_in,
    fade_out, fighter, bomber, frigate, selection_factory, player_factory,
    easy_enemy_factory, laser, bomb, missile, countdown, splash ]]
 
@@ -20,6 +20,11 @@ fish = game.make_blueprint('fish',
   {'transform'},
   {'fish'},
   {'sprite'})  
+  
+plus = game.make_blueprint('plus',
+  {'transform'},
+  {'plus'},
+  {'sprite', resource='plus_sprite'})  
   
 background_fx = game.make_blueprint('background_fx',
   {'background_fx'})
@@ -78,7 +83,7 @@ splash = game.make_blueprint('splash',
 player_factory = game.make_blueprint('factory',
   {'transform'},
   {'sprite'},
-  {'collision', collision_type='ship', poly=collision.make_rectangle(249, 91)},
+  {'collision', collision_type='ship', poly=collision.make_rectangle(246, 87)},
   {'ship', turn_speed=0.00028, accel=0.002, hit_points=20000, sprites_table="factory_sprites"},
   {'factory_damage'},
   {'factory_ai'},
@@ -89,7 +94,7 @@ player_factory = game.make_blueprint('factory',
 easy_enemy_factory = game.make_blueprint('factory',
   {'transform'},
   {'sprite', resource='factory_sprite'},
-  {'collision', collision_type='ship', poly=collision.make_rectangle(170, 100)},
+  {'collision', collision_type='ship', poly=collision.make_rectangle(246, 87)},
   {'ship', turn_speed=0.00028, accel=0.002, hit_points=20000, sprites_table="factory_sprites"},
   {'factory_damage'},
   {'factory_ai'},

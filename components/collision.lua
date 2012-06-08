@@ -33,11 +33,11 @@ game.actors.new_generic('collision', function ()
           local damage2 = ship1.ship.hit_points
 		  
 		  if b1.actor == 'factory' and b2.actor == 'factory' then
-		  ship1.ship.damage()
-          ship2.ship.damage()
+			ship1.ship.damage()
+			ship2.ship.damage()
 		  else
-		  ship1.ship.damage(damage1)
-          ship2.ship.damage(damage2)
+			ship1.ship.damage(damage1 * (ship1.ship.accel * 2))
+			ship2.ship.damage(damage2 * (ship1.ship.accel * 2))
 		  end
 
         end

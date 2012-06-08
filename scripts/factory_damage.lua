@@ -20,6 +20,9 @@ function draw()
     game.resources.factory_heavy_damage_sprites[math.floor(time/4)%3+1]:draw()
   elseif health < game.constants.high_health_threshold then
     game.resources.factory_light_damage_sprites[math.floor(time/4)%3+1]:draw()
+  elseif health > game.constants.high_health_threshold then
+    game.resources.shield_sprite:draw()
+	
   end
   gl.glColor3d(1, 1, 1)
 

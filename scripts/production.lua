@@ -38,10 +38,6 @@ local function spawn(unit_type)
 	
 	self.ship.damage(-(100 * i))
 	
-	--game.actors.new(blueprints.plus,
-     -- {'transform', pos=spawn_pos, facing=self.transform.facing},
-    --  {'ship', player=self.ship.player})
-	
   else
     local spawn_pos = self.transform.pos + SPAWN_OFFSET * self.transform.facing
     game.log.record_spawn(blueprints[unit_type])

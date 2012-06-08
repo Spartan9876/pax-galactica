@@ -1,15 +1,12 @@
-local turnrate = 0
-local flip
+local random1 = math.random(0,1)
+local random2 = math.random(0,1)
+local random3 = math.random(0,1)
 function update()
-  self.ship.thrust()
-  if math.random(0,15)==3 then
-  turnrate = turnrate + math.random(-1,1)
-  end
-	 local on_screen = game.targeting.on_screen(self.transform.pos)
-  --if (on_screen > (1024, 768) or on_screen < (0, 0) or on_screen > (1024, 0) or on_screen > (0, 768) ) then
-		 --self.ship.turn(4)
-	--else
-	self.ship.turn(turnrate)
-	 
-  --end
+	if random1 ==1 or random2 ==1 or random3 ==1 then
+		self.ship.thrust()
+		self.ship.turn(1)
+	else 
+		self.ship.thrust()
+		self.ship.turn(0)
+	end
 end

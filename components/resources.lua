@@ -77,6 +77,7 @@ big_bubble_sprite = graphics.sprite_from_image('sprites/big_bubble.png', nil, 'c
 explosion_sprite = graphics.sprite_from_image('sprites/explosion.png', nil, 'center')
 spark_sprite = graphics.sprite_from_image('sprites/spark.png', nil, 'center')
 plus_sprite = graphics.sprite_from_image('sprites/plus.png', nil, 'center')
+shield_sprite = graphics.sprite_from_image('sprites/force_field.png', nil, 'center')
 
 debris_sprites = {
   graphics.sprite_from_image('sprites/debris_large.png', nil, 'center'),

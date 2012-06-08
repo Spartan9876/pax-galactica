@@ -23,7 +23,7 @@ function trace_line(from, to)
 end
 
 function trace_bar(pos, progress)
-  if in_debug_mode() then
+  if true then
     table.insert(tracers, game.actors.new_generic('arrow_trace', function ()
       function draw()
         local left = -10 + pos.x

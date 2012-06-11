@@ -41,7 +41,22 @@ detected video modes:
   1680x1050 R8 G8 B8
 setting video mode. . .
 starting main loop
-warning: underrun of 450ms
-warning: underrun of 2195ms
+warning: underrun of 662ms
+warning: underrun of 2550ms
+warning: underrun of 27ms
+warning: underrun of 39ms
+warning: underrun of 40ms
+warning: underrun of 28ms
+warning: underrun of 31ms
+warning: underrun of 38ms
+warning: underrun of 40ms
+warning: underrun of 43ms
+warning: underrun of 34ms
+warning: underrun of 38ms
+warning: underrun of 27ms
+warning: underrun of 44ms
+warning: underrun of 30ms
+warning: underrun of 32ms
+warning: underrun of 37ms
 shutting down
 exiting normally

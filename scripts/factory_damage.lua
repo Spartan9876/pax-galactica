@@ -1,6 +1,7 @@
 local gl = require 'gl'
 
 local time = 0
+local max = 20000
 
 function update()
   time = time + 1
@@ -22,6 +23,9 @@ function draw()
     game.resources.factory_light_damage_sprites[math.floor(time/4)%3+1]:draw()
   elseif health > game.constants.high_health_threshold then
     game.resources.shield_sprite:draw()
+	if health < max then
+		self.ship.damage(-0.2)
+	end
 	
   end
   gl.glColor3d(1, 1, 1)
